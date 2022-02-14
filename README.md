@@ -4,6 +4,10 @@ I enrolled in this Boot/Zoomcamp (free) to expand my technology portfolio in the
 
 To reinforce learning, I complete homeworks, lectures, was involved with collaborating and debugging errors and discussing solutions in the slack channel, and a final project to get the certification. 
 
+Which offered structured curriculum, 3500+ students to collaborate on projects a community to help debug each other's issues and also talk about data engineering, homework's lectures, and I enjoyed learning and feeling like a student again and exploring technologies not within my own company's stack and seeing what technologies are out there in industry and hands-on. 
+
+
+
 - **Start**: 17 January 2022
 - Register in [DataTalks.Club's Slack](https://datatalks.club/slack.html)
 - The [`#course-data-engineering`](https://app.slack.com/client/T01ATQK62F8/C01FABYF2RG) channel
