@@ -1,0 +1,15 @@
+1. SELECT COUNT(*) FROM `dtc-de-338723.trips_data_all.fhv_tripdata` 
+
+2. SELECT COUNT(DISTINCT (dispatching_base_num)) FROM `dtc-de-338723.trips_data_all.fhv_tripdata` 
+
+4. CREATE OR REPLACE TABLE `dtc-de-338723.trips_data_all.fhv_tripdata_partitioned_clustered` 
+PARTITION BY DATE(dropoff_datetime)
+CLUSTER BY dispatching_base_num AS (
+  SELECT * FROM `dtc-de-338723.trips_data_all.fhv_tripdata` 
+);
+
+SELECT COUNT(*) 
+FROM `dtc-de-338723.trips_data_all.fhv_tripdata_partitioned_clustered`
+WHERE DATE(pickup_datetime) BETWEEN '2019-01-01' AND '2019-03-31'
+AND dispatching_base_num IN ('B00987', 'B02060', 'B02279') 
+
